@@ -1,0 +1,16 @@
+[project]
+name = "svgdb-scraper"
+requires-python = ">=3.13"
+dynamic = ["version"]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+reportMissingTypeStubs = "information"
+
+[tool.ruff.lint]
+# isort, pyupgrade and shdowing
+extend-select = ["I", "UP", "A"]
+
+[tool.ruff.lint.flake8-builtins]
+# Ignore shadowing of some builtins
+ignorelist = ["id"]

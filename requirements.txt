@@ -1,0 +1,6 @@
+httpx
+pydantic
+limits
+pillow
+exiv2
+pathvalidate
